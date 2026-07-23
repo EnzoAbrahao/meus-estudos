@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Controle de Estoque</h1>
+    <p>Organize o estoque da sua casa</p>
+
+    <div class="Categorias">
+      <button id="todos">Todos</button>
+      <button id="alimentos">Alimentos</button>
+      <button id="limpeza">Limpeza</button>
+      <button id="higiene">Higiene</button>
+      <button id="bebidas">Bebidas</button>
+      <button id="outros">Outros</button>
+    </div>
+
+    <div class="formulario">
+      <input id="nomeProduto" placeholder="Nome do produto" />
+
+      <input id="quantidadeProduto" placeholder="Quantidade" />
+
+      <select id="categoriaProduto">
+        <option>Alimentos</option>
+        <option>Limpeza</option>
+        <option>Higiene</option>
+        <option>Bebidas</option>
+        <option>Outros</option>
+      </select>
+    </div>
+
+    <button id="adicionar">Adicionar Produto</button>
+    <p id="mensagem"></p>
+
+    <div class="produtos" id="listaProdutos"></div>
+
+    <div id="notificacoes"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
